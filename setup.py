@@ -1,5 +1,8 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name='medium-article-py',
     version='v0.1',
@@ -15,5 +18,6 @@ setup(
     python_requires='>=3.6',
     install_requires=['requests'],
     download_url='https://github.com/muhammad-usman-108/medium-article-py.git',
-    keywords=['medium', 'medium-api', 'medium-article', 'api']
+    keywords=['medium', 'medium-api', 'medium-article', 'api'],
+    long_description=long_description
 )
