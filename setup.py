@@ -1,15 +1,16 @@
-from setuptools import setup, find_packages
+import setuptools
 
-with open("README.md", "r", encoding="utf-8") as fh:
+with open("README.rst", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-setup(
+setuptools.setup(
     name='medium-article-py',
-    version='v0.1',
+    version='v0.1.3',
     description='A simple python library for Medium Articles APIs',
-    author='Your Name',
+    long_description=long_description,
+    author='Muhammad Usman',
     author_email='umuhammad202@yahoo.com',
-    packages=find_packages(),
+    packages=setuptools.find_packages(),
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
@@ -19,5 +20,4 @@ setup(
     install_requires=['requests'],
     download_url='https://github.com/muhammad-usman-108/medium-article-py.git',
     keywords=['medium', 'medium-api', 'medium-article', 'api'],
-    long_description=long_description
 )

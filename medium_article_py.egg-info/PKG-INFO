@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: medium-article-py
+Version: 0.1.3
+Summary: A simple python library for Medium Articles APIs
+Download-URL: https://github.com/muhammad-usman-108/medium-article-py.git
+Author: Muhammad Usman
+Author-email: umuhammad202@yahoo.com
+Keywords: medium,medium-api,medium-article,api
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests
+
+medium-article-py
+====================================================
+
+A Python library designed to retrieve articles and user information from Medium. This library offers an easy-to-use method for developers to incorporate Medium content into their applications.
+
+
+Installation
+------------
+
+You can install this library using pip.
+
+.. code-block:: python
+
+    pip install medium-article-py
+
+
+Usage
+------------
+
+Here is a simple example to get you started:
+
+.. code-block:: python
+
+    from medium-article-py import MediumArticles
+    username = '<your-medium-username>'
+
+    print(MediumArticles.get_profile_url(username))      
+    # Output: https://medium.com/feed/@engrmuhammadusman108
+
+
+
+Contributing
+------------
+
+- [Misbah Afzal](https://github.com/misbahafzal)
+- [Muhammad Usman](https://github.com/muhammad-usman-108)
+
+LICENSE
+------------
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/muhammad-usman-108/medium-article-api/blob/main/LICENSE) file for details.
