@@ -27,17 +27,49 @@ Here is a simple example to get you started:
     print(MediumArticles.get_profile_url(username))      
     # Output: https://medium.com/feed/@engrmuhammadusman108
 
-
 .. list-table::
-   :widths: 20 80
+   :widths: 20 80 20
    :header-rows: 1
 
-   * - Column 1 Header
-     - Column 2 Header
-   * - Row 1, Column 1
-     - Row 1, Column 2
-   * - Row 2, Column 1
-     - Row 2, Column 2
+   * - Function
+     - Arguments
+     - Output
+   * - getData
+     - username : string
+     - string
+   * - getProfileUrl
+     - username : string
+     - string
+   * - getProfileTitle
+     - username : string
+     - string
+   * - getProfileAuthor
+     - username : string
+     - string
+   * - getProfileDescription
+     - username : string
+     - string
+   * - getProfileImageUrl
+     - username : string
+     - string
+   * - getLatestArticleTitle
+     - username : string
+     - array[string]
+   * - getLatestArticlePublicationDate
+     - username : string
+     - string
+   * - getLatestArticleUrl
+     - username : string
+     - string
+   * - getLatestArticleDescription
+     - username : string
+     - html
+   * - getLatestArticle
+     - username : string
+     - object
+   * - getLatestArticlesTitle
+     - username : string
+     - string
 
 
 Contributing
