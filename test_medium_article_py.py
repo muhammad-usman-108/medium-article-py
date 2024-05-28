@@ -1,5 +1,6 @@
 import unittest
-from src.medium import MediumArticles
+# from src.medium import MediumArticles
+from src.medium_article_py.medium import MediumArticles
 
 class TestOperations(unittest.TestCase):
     def setUp(self):
