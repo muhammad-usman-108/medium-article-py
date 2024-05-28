@@ -5,12 +5,13 @@ with open("README.rst", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='medium-article-py',
-    version='v0.1.6',
+    version='v0.1.7',
     description='A simple python library for Medium Articles APIs',
     long_description=long_description,
     author='Muhammad Usman',
     author_email='umuhammad202@yahoo.com',
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(where='src'),
+    package_dir={'': 'src'},
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
