@@ -21,10 +21,12 @@ Here is a simple example to get you started:
 
 .. code-block:: python
 
-    from medium-article-py import MediumArticles
+    from medium_article_py.medium import MediumArticles
+    
     username = '<your-medium-username>'
+    md = MediumArticles()
 
-    print(MediumArticles.get_profile_url(username))      
+    print(md.get_profile_url(username))    
     # Output: https://medium.com/feed/@engrmuhammadusman108
 
 .. list-table::
